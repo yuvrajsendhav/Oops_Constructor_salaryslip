@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <script>
+        class Sum
+        {
+            constructor()
+            {
+                var bs, hra, da, gs;
+            }
+            input()
+            {
+                this.bs=parseInt(prompt("Enter your basic salary"));
+                this.hra=(this.bs*20)/100;
+                this.da=(this.bs*40)/100;
+                this.gs=this.bs+this.hra+this.da
+            }
+            show()
+            {
+                document.write("Basic:"+this.bs+"<br>");
+                
+                document.write("HRA:"+this.hra+"<br>");
+                document.write("DA:"+this.da+"<br>");
+                document.write("gross salary:"+this.gs+"<br>");
+            }
+        }
+        let a=new Sum();
+        a.input();
+        a.show();
+        let b=new Sum();
+        b.input();
+        b.show();
+    </script>
+</body>
+</html>
